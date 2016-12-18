@@ -5,13 +5,14 @@ import React, {Component} from "react";
 
 import VideoItem from './video_item';
 
-const VideoList=({videos})=>{
+const VideoList=({videos,onVideoSelect})=>{
 
     const videoItems=videos.map((video)=>{
        return <VideoItem
+           onVideoSelect={videoObj=>onVideoSelect(videoObj)}
            key={video.etag}
            video={video}
-           onVideoSelect={videos.onVideoSelect} />
+            />
     });
     return(
         <div>

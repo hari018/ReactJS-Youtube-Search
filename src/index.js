@@ -28,7 +28,6 @@ class App extends Component{
     };
 
     selectedVideofrmList(selectedVideo){
-        console.log("video selected");
         this.setState({selectedVideo});
     }
     render(){
@@ -36,8 +35,8 @@ class App extends Component{
             <div>
                 <SearchBar onSearchChange={term=>this.videoSearch(term)}/>
                  <VideoList
+                    onVideoSelect={selectedVideo=>this.selectedVideofrmList(selectedVideo)}
                      videos={this.state.videos}
-                     onVideoSelect={selectedVideo=>this.selectedVideofrmList(selectedVideo)}
                  />
                 <VideoDetails video={this.state.selectedVideo}/>
             </div>

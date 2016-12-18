@@ -4,7 +4,7 @@
 import React,{Component} from 'react';
 
 const VideoItem=({video,onVideoSelect})=>{
-    console.log("==="+onVideoSelect);
+
     const imageUrl=video.snippet.thumbnails.default.url;
     return (
       <li onClick={()=> onVideoSelect(video)}>
