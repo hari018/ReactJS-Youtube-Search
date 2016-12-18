@@ -33,8 +33,8 @@ class App extends Component{
     render(){
         return(
             <div>
-                <SearchBar onSearchChange={term=>this.videoSearch(term)}/>
-                 <VideoList
+                <SearchBar  onSearchChange={term=>this.videoSearch(term)}/>
+                 <VideoList class="videolList"
                     onVideoSelect={selectedVideo=>this.selectedVideofrmList(selectedVideo)}
                      videos={this.state.videos}
                  />

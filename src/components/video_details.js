@@ -13,8 +13,8 @@ const VideoDetails=({video})=>{
     const videoTitle = video.snippet.title;
     return(
         <div>
-            <div>{videoTitle}</div>
-            <div><iframe src={videoUrl}></iframe></div>
+            <div><h3>{videoTitle}</h3></div>
+            <div><iframe className="videoiFrameDesc" src={videoUrl}></iframe></div>
             <div>{videoDescription}</div>
         </div>
     )

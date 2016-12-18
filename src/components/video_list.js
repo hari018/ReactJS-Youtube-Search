@@ -15,8 +15,8 @@ const VideoList=({videos,onVideoSelect})=>{
             />
     });
     return(
-        <div>
-            <ul>{videoItems}
+        <div className="videolList">
+            <ul className="ul-list">{videoItems}
             </ul>
         </div>
     );

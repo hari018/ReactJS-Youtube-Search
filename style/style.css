@@ -1,0 +1,19 @@
+.videoiFrameDesc{
+    width: 550px;
+    height: 400px;
+}
+.videolList{
+    float: right;
+    margin-top: 67px;
+}
+.searchBox{
+    width: 400px;
+    height: 50px;
+}
+
+.ul-list{
+    list-style:none;
+}
+.ul-list li{
+    margin-top: 3px;
+}
